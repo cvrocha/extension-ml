@@ -1,0 +1,21 @@
+{
+    "name": "Cupons ML",
+    "description": "Essa é um extensão para ajudar a pegar os cupons do mercado livre mais rápido",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "/images/logo-ml-cupom.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "https://developer.chrome.com/docs/extensions/*",
+                "https://developer.chrome.com/docs/webstore/*"
+            ]
+        }
+    ]
+}
